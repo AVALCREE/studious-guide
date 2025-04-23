@@ -1,15 +1,41 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>NexusInnovator — Developer Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white font-sans flex flex-col items-center justify-center min-h-screen text-center px-4">
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">🚧 Under Construction</h1>
-  <p class="text-lg md:text-xl text-gray-300">We're working on something awesome. Check back soon!</p>
-  <div class="mt-8 w-10 h-10 border-4 border-gray-500 border-t-blue-500 rounded-full animate-spin"></div>
-   <p class="text-lg md:text-xl text-gray-300">!</p>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="bg-gray-800 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">NexusInnovator</h1>
+      <nav class="space-x-4">
+        <a href="#projects" class="hover:text-teal-300">Projects</a>
+        <a href="#about" class="hover:text-teal-300">About</a>
+        <a href="#blog" class="hover:text-teal-300">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-12 px-4">
+    <!-- ... (projects and about sections unchanged) ... -->
+
+    <section id="blog" class="mb-16">
+      <h3 class="text-3xl font-bold mb-6">📝 Latest Blog Posts</h3>
+      <div class="space-y-6">
+        <article class="bg-gray-800 p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2">Welcome to NexusInnovator</h4>
+          <p class="text-gray-400">We’re excited to launch our new dev hub where we’ll share builds, dev logs, project breakdowns, and more.</p>
+          <a href="/blog/welcome.html" class="text-teal-400 underline mt-2 inline-block">Read more →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 py-4 mt-12 text-center text-sm text-gray-500">
+    &copy; 2025 NexusInnovator. All rights reserved.
+  </footer>
 </body>
 </html>
